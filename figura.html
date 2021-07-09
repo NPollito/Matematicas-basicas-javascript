@@ -1,13 +1,55 @@
 <!DOCTYPE html>
+
+ç
+ç
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <title>Figuras Geómetricas</title>
 </head>
 <body>
-    <h1>Figuras Geómetricas</h1>
+    <header>
+        <h1>Figuras Geómetricas</h1>
+        <p>Primer taller del curso de JS</p>
+    </header>
+
+    <section>
+        <div class="caja">
+            <h2 class="titulo">Área y perimetro del Cuadrado</h2>
+            <div class="cuadrado"></div>
+            <form class="formulario">
+                <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
+                <input id="inputCuadrado" type="number" placeholder="lado">
+            </form>
+            <button class="buttonCalc" type="button">Calcular</button>
+        </div>
+
+        <div class="caja">
+            <h2 class="titulo">Área y perimetro del Triángulo</h2>
+            <div class="triangulo"></div>
+            <form class="formulario">
+                <input class="izquierda" id="inputCuadrado" type="number" placeholder="lado 1">
+                <input id="inputCuadrado" type="number" placeholder="base">
+                <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
+            </form>
+            <button class="buttonCalc" type="button">Calcular</button>
+        </div>
+
+        <!-- <div class="caja circulo">
+            <h2 class="titulo">Área y perimetro del Triángulo</h2>
+            
+            <form">
+                <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label>
+                <input id="inputCuadrado" type="number">
+                <button type="button" onclick="calPerimetro()">Calcular el perímetro</button>
+                <button type="button" onclick="calArea()">Calcular el área</button>
+            </form>
+        </div>
+    </section> -->
 
     <script src="figura.js"></script>
 </body>

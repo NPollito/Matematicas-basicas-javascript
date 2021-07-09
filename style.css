@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #1f2c38;
+    width: 100%;
+    height: auto;
+    font-size: 62.5%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    /* min-width: 400px;
+    width: 100%;
+    height: 80px; */
+    background-color: #0e131b;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #93ffa1;
+}
+
+header p {
+    font-size: 2rem;
+    color: #1f2c38;
+}
+
+/* cards */
+
+.caja {
+    position: relative;
+    width: 320px;
+    min-width: 320;
+    height: 380px;
+    border: 2px solid #93ffa1;
+    border-radius: 25px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.caja h2 {
+    font-size: 2rem;
+    color: #599876;
+    padding-top: 25px;
+}
+
+.caja .cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: #599876;
+    margin: 40px auto 0;
+}
+
+.caja .triangulo {
+     width: 0;
+     height: 0;
+     border-right: 80px solid transparent;
+     border-top: 60px solid transparent;
+     border-left: 80px solid transparent;
+     border-bottom: 100px solid #599876;
+     margin: -25px auto;   
+}
+
+.caja .izquierda {
+    position: absolute;
+    top: 125px;
+    left: 60px;
+}
+
+.caja .derecha {
+    position: absolute;
+    top: 125px;
+    left: 210px;
+}
+
+.caja input {
+    cursor: text;
+    outline: none;
+    width: 45px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #599876;
+    color: #599876;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+/* ocultar type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.caja .buttonCalc {
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    color: #93ffa1;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid #599876;
+    width: 120px;
+    height: 30px;
+}
+
+.caja .buttonCalc:hover {
+    background-color: #050a11;
+}
