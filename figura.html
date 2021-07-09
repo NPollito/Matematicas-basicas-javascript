@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-ç
-ç
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 730px">
+    <link rel="stylesheet" href="./css/escritorio.css" media="(min-width: 1100px)"> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <title>Figuras Geómetricas</title>
 </head>
@@ -19,8 +18,10 @@
 
     <section>
         <div class="caja">
-            <h2 class="titulo">Área y perimetro del Cuadrado</h2>
-            <div class="cuadrado"></div>
+            <h2 class="titulo">Área y perimetro Cuadrado</h2>
+            <div class="caja-figura">
+                <div class="cuadrado"></div>
+            </div>
             <form class="formulario">
                 <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
                 <input id="inputCuadrado" type="number" placeholder="lado">
@@ -29,8 +30,10 @@
         </div>
 
         <div class="caja">
-            <h2 class="titulo">Área y perimetro del Triángulo</h2>
-            <div class="triangulo"></div>
+            <h2 class="titulo">Área y perimetro Triángulo</h2>
+            <div class="caja-figura">
+                <div class="triangulo"></div>
+            </div>
             <form class="formulario">
                 <input class="izquierda" id="inputCuadrado" type="number" placeholder="lado 1">
                 <input id="inputCuadrado" type="number" placeholder="base">
@@ -39,18 +42,31 @@
             <button class="buttonCalc" type="button">Calcular</button>
         </div>
 
-        <!-- <div class="caja circulo">
-            <h2 class="titulo">Área y perimetro del Triángulo</h2>
-            
-            <form">
-                <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label>
-                <input id="inputCuadrado" type="number">
-                <button type="button" onclick="calPerimetro()">Calcular el perímetro</button>
-                <button type="button" onclick="calArea()">Calcular el área</button>
+        <div class="caja">
+            <h2 class="titulo">Área y perimetro Círculo</h2>
+            <div class="caja-figura">
+                <div class="circulo"></div>
+            </div>
+            <form class="formulario">
+                <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
+                <input class="center" id="inputCirculo" type="number" placeholder="radio">
             </form>
+            <button class="buttonCalc" type="button">Calcular</button>
         </div>
-    </section> -->
 
+        <div class="caja">
+            <h2 class="titulo">Área y perimetro Triángulo Isósceles</h2>
+            <div class="caja-figura">
+                <div class="triangulo  triangulo2"></div>
+            </div>
+            <form class="formulario">
+                <input class="izquierda" id="inputCuadrado" type="number" placeholder="lado 1">
+                <input id="inputCuadrado" type="number" placeholder="base">
+                <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
+            </form>
+            <button class="buttonCalc" type="button">Calcular</button>
+        </div>
+    </section>
     <script src="figura.js"></script>
 </body>
 </html>

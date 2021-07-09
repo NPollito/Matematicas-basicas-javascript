@@ -34,51 +34,60 @@ header p {
 
 /* cards */
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 90vh;
+}
+
 .caja {
     position: relative;
-    width: 320px;
+    width: 300px;
     min-width: 320;
     height: 380px;
     border: 2px solid #93ffa1;
     border-radius: 25px;
     text-align: center;
-    margin: 25px auto;
+    margin: 15px auto;
 }
 
 .caja h2 {
     font-size: 2rem;
     color: #599876;
-    padding-top: 25px;
+    padding: 25px 0;
+}
+
+.caja .caja-figura {
+    width: 100%;
+    height: 120px;
+    /* background-color: red; */
+    margin-bottom: 8px;
 }
 
 .caja .cuadrado {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #599876;
-    margin: 40px auto 0;
+    margin: 0 auto;
 }
 
 .caja .triangulo {
-     width: 0;
-     height: 0;
-     border-right: 80px solid transparent;
-     border-top: 60px solid transparent;
-     border-left: 80px solid transparent;
-     border-bottom: 100px solid #599876;
-     margin: -25px auto;   
+    width: 0;
+    height: 0;
+    border-right: 80px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 120px solid #599876; 
+    margin: 0 auto; 
 }
 
-.caja .izquierda {
-    position: absolute;
-    top: 125px;
-    left: 60px;
+.caja .triangulo2:nth-child(1) {
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
 }
 
-.caja .derecha {
-    position: absolute;
-    top: 125px;
-    left: 210px;
-}
+/* caja imput */
 
 .caja input {
     cursor: text;
@@ -90,15 +99,42 @@ header p {
     border: 2px solid #599876;
     color: #599876;
     text-align: center;
-    margin-top: 10px; 
 }
-
 /* ocultar type number */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+.caja .izquierda {
+    position: absolute;
+    top: 110px;
+    left: 40px;
+}
+
+.caja .derecha {
+    position: absolute;
+    top: 110px;
+    left: 210px;
+}
+
+.caja .circulo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #599876;
+    margin: 0 auto ;
+}
+
+.caja .center {
+    position: relative;
+    bottom: 80px;
+    background-color: #1f2c38;
+}
+
+/* caja botton */
+
 
 .caja .buttonCalc {
     cursor: pointer;
