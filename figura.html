@@ -23,10 +23,12 @@
                 <div class="cuadrado"></div>
             </div>
             <form class="formulario">
-                <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
+                <!-- <label for="inputCuadrado"></label> -->
                 <input id="inputCuadrado" type="number" placeholder="lado">
             </form>
-            <button class="buttonCalc" type="button">Calcular</button>
+            <button class="buttonCalc" type="button" onclick="cuadradoAP()">Calcular</button>
+            <p>El Área es: </p>
+            <p>El Perimetro es: </p>
         </div>
 
         <div class="caja">
@@ -35,11 +37,11 @@
                 <div class="triangulo"></div>
             </div>
             <form class="formulario">
-                <input class="izquierda" id="inputCuadrado" type="number" placeholder="lado 1">
-                <input id="inputCuadrado" type="number" placeholder="base">
-                <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
+                <input class="izquierda" id="inputIzquierdo" type="number" placeholder="lado 1">
+                <input id="inputCentro" type="number" placeholder="base">
+                <input class="derecha" id="inputDerecho" type="number" placeholder="lado 2">
             </form>
-            <button class="buttonCalc" type="button">Calcular</button>
+            <button class="buttonCalc" type="button" onclick="trianguloAP()">Calcular</button>
         </div>
 
         <div class="caja">
@@ -51,7 +53,7 @@
                 <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
                 <input class="center" id="inputCirculo" type="number" placeholder="radio">
             </form>
-            <button class="buttonCalc" type="button">Calcular</button>
+            <button class="buttonCalc" type="button" onclick="circuloAP()">Calcular</button>
         </div>
 
         <div class="caja">
@@ -64,7 +66,7 @@
                 <input id="inputCuadrado" type="number" placeholder="base">
                 <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
             </form>
-            <button class="buttonCalc" type="button">Calcular</button>
+            <button class="buttonCalc" type="button" onclick="isocelesAP()">Calcular</button>
         </div>
     </section>
     <script src="figura.js"></script>

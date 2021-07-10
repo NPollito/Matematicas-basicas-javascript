@@ -153,3 +153,10 @@ input[type=number]::-webkit-outer-spin-button {
 .caja .buttonCalc:hover {
     background-color: #050a11;
 }
+
+.caja p {
+    font-size: 1.8rem;
+    text-align: start;
+    padding: 5px 10px;
+    color: #599876;
+}
