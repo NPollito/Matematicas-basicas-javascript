@@ -14,6 +14,7 @@
     <header>
         <h1>Figuras Geómetricas</h1>
         <p>Primer taller del curso de JS</p>
+        <p>Nilton pv</p>
     </header>
 
     <section>
@@ -27,8 +28,7 @@
                 <input id="inputCuadrado" type="number" placeholder="lado">
             </form>
             <button class="buttonCalc" type="button" onclick="cuadradoAP()">Calcular</button>
-            <p>El Área es: </p>
-            <p>El Perimetro es: </p>
+            <p id="resultCuadrado"></p>
         </div>
 
         <div class="caja">
@@ -42,6 +42,7 @@
                 <input class="derecha" id="inputDerecho" type="number" placeholder="lado 2">
             </form>
             <button class="buttonCalc" type="button" onclick="trianguloAP()">Calcular</button>
+            <p id="resultTriangulo"></p>
         </div>
 
         <div class="caja">
@@ -54,6 +55,7 @@
                 <input class="center" id="inputCirculo" type="number" placeholder="radio">
             </form>
             <button class="buttonCalc" type="button" onclick="circuloAP()">Calcular</button>
+            <p id="resultCirculo"></p>
         </div>
 
         <div class="caja">
@@ -67,6 +69,7 @@
                 <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
             </form>
             <button class="buttonCalc" type="button" onclick="isocelesAP()">Calcular</button>
+            <p id="resultIsoceles"></p>
         </div>
     </section>
     <script src="figura.js"></script>

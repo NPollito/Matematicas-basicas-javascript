@@ -18,8 +18,8 @@ header {
     height: 80px; */
     background-color: #0e131b;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 15px;
 }
 
 header h1 {
@@ -156,7 +156,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .caja p {
     font-size: 1.8rem;
-    text-align: start;
-    padding: 5px 10px;
+    margin: 30px 8px 0 6px;
     color: #599876;
 }

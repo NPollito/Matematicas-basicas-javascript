@@ -53,17 +53,20 @@ function areaCirculo(radio) {
 
 function cuadradoAP() {
     const input = document.getElementById("inputCuadrado").value;
+    const result = document.getElementById("resultCuadrado");
     // const value = input.value;
 
     const area = areaCuadrado(input);
     const perimetro = perimetroCuadrado(input);
-    alert(`area ${area} perimetro ${perimetro}`);
+    result.innerText = `El Área es: ${area} cm
+                        El Perimetro es: ${perimetro} cm`;
 }
 
 function trianguloAP() {
     const input1 = document.getElementById("inputIzquierdo").value;
     const input2 = document.getElementById("inputCentro").value;
     const input3 = document.getElementById("inputDerecho").value;
+    const result = document.getElementById("resultTriangulo");
    
     const lado1 = parseInt(input1); 
     const base = parseInt(input2)
@@ -71,13 +74,29 @@ function trianguloAP() {
 
     const area = areaTriangulo(base, lado2);
     const perimetro = perimetroTriangulo(lado1, base, lado2);
-    alert(`area ${area} perimetro ${perimetro}`);
+    // alert(`area ${area} perimetro ${perimetro}`);
+    result.innerText = `El Área es: ${area} cm
+                        El Perimetro es: ${perimetro} cm`;
 }
 
 function circuloAP() {
     const input = document.getElementById("inputCirculo").value;
+    const result = document.getElementById("resultCirculo");
 
-    const area = areaCirculo(input);
-    const perimetro = perimetroCirculo(input);
-    alert(`area ${area} perimetro ${perimetro}`);
+    const area = areaCirculo(input).toFixed(3);
+    const perimetro = perimetroCirculo(input).toFixed(3);
+    const diametro = diametroCirculo(input).toFixed(3);
+    // document.write(`area ${area} perimetro ${perimetro}`);
+    result.innerText = `El Área es: ${area} cm
+                        El Perimetro es: ${perimetro} cm
+                        El Diametro es: ${diametro} cm`;
+}
+
+function isocelesAP(lado1, lado2, base){
+    if(lado1==lado2 && lado1!=base){
+        const altura = Math.sqrt(lado1**2-base**2/4)
+        alert("Es un Triangulo Isoceles de altura: "+ altura)
+    }else{
+        alert("No es un triangulo Isoceles")
+    }
 }
