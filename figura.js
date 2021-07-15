@@ -95,8 +95,8 @@ function circuloAP() {
 function isocelesAP(lado1, lado2, base){
     if(lado1==lado2 && lado1!=base){
         const altura = Math.sqrt(lado1**2-base**2/4)
-        alert("Es un Triangulo Isoceles de altura: "+ altura)
+        alert("Aún estamos trabajando, disculpe"+ altura)
     }else{
-        alert("No es un triangulo Isoceles")
+        alert("Aún estamos trabajando, disculpe")
     }
-}
+}s

@@ -6,9 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/descuentos.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
     <title>Porcentajes y Descuentos</title>
 </head>
 <body>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+        <p>Segundo taller del curso de JS</p>
+        <p>Nilton pv</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="contenedor__caja">
+            <i class="contenedor__icono fas fa-shopping-cart"></i>
+            <h2 class="contenedor__titulo">Tienda de Descuentos y Cupones</h2>
+
+            <form class="contenedor__inputs">
+                <label for="inputPrecio">¿Cuál es el Precio?</label>
+                <input id="inputPrecio" type="number" placeholder="soles">
+
+                <label for="inputDescuento">¿Cuál es el Descuento?</label>
+                <input id="inputDescuento" type="number" placeholder="porcentaje">
+
+                <div class="cupon">
+                    <label for="inputCupon">Cupones</label>
+                    <select id="inputCupon">
+                        <option disabled>cupon de descuento</option>
+                        <option value="0">ninguno</option>
+                        <option value="15">-15%</option>
+                        <option value="25">-25%</option>
+                        <option value="35">-35%</option>
+                    </select>
+                </div>
+
+                <button id="btnCalcular" type="button" onclick="generarDescuento()">Generar</button>
+
+                <p id="texto"></p>
+            </form>
+        </section>
+    </main>
     <script src="../js/descuentos.js"></script>
 </body>
 </html>

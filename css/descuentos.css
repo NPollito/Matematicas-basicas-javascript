@@ -5,9 +5,125 @@
 }
 
 html {
-    /* background-color: #1f2c38; */
+    background-color: #1f2c38;
     width: 100%;
     height: auto;
     font-size: 62.5%;
     font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    background-color: #0e131b;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #93ffa1;
+}
+
+header p {
+    font-size: 2rem;
+    color: #1f2c38;
+}
+
+
+/* caja */
+.contenedor {
+    width: 350px;
+    min-width: 350px;
+    height: auto;
+    border: 2px solid #93ffa1;
+    border-radius: 25px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.contenedor__caja i {
+    font-size: 80px;
+    color: #599876;
+    margin: 20px 0 12px;
+}
+
+.contenedor__caja h2 {
+    font-size: 1.8rem;
+    color: #599876;
+    margin-bottom: 18px;
+}
+
+.contenedor__inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor__inputs label {
+    font-size: 1.5rem;
+    color: #599876;
+    padding-bottom: 5px;
+}
+
+.contenedor__inputs input {
+    cursor: text;
+    outline: none;
+    width: 270px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #599876;
+    color: #599876;
+    text-align: center;
+    margin: 0 auto 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+/* boton */
+.contenedor__inputs button {
+    cursor: pointer;
+    margin: 14px auto;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    color: #93ffa1;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid #599876;
+    width: 200px;
+    height: 35px;
+}
+
+.contenedor__inputs button:hover {
+    background-color: #050a11;
+}
+
+.contenedor__inputs p {
+    font-size: 1.8rem;
+    margin: 10px auto;
+    color: #599876;
+}
+
+
+/* input cupon */
+
+.contenedor__inputs .cupon {
+    padding-top: 7px;
+}
+
+.contenedor__inputs select {
+    cursor: pointer;
+    margin-left: 5px;
+    width: 200px;
+    height: 25px;
+    background-color: #1f2c38;
+    outline: none;
+    border: 2px solid #599876;
+    color: #599876;
+    border-radius: 6px;
 }

@@ -38,7 +38,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 90vh;
+    height: 600px;
 }
 
 .caja {
