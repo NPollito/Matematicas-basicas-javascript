@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #1f2c38;
+    width: 100%;
+    height: auto;
+    font-size: 62.5%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    background-color: #0e131b;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #93ffa1;
+}
+
+header p {
+    font-size: 2rem;
+    color: #1f2c38;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 20px;
+}
+
+.contenedor__caja {
+    width: 320px;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    border: 2px solid #93ffa1;
+    border-radius: 25px;
+}
+
+.contenedor__caja img {
+    width: 80px;
+    margin: 15px auto;
+}
+
+.contenedor__caja h1 {
+    font-size: 2rem;
+    color: #599876;
+    margin-bottom: 20px;
+}
+
+.contenedor__input label{
+    font-size: 1.5rem;
+    color: #599876;
+    padding-right: 5px;
+}
+
+.contenedor__input input {
+    cursor: text;
+    outline: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #599876;
+    color: #599876;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor__input button {
+    cursor: pointer;
+    height: 30px;
+    text-decoration: none;
+    color: #93ffa1;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid #599876;
+    padding: 2px;
+}
+
+.contenedor__input button:hover {
+    background-color: #050a11;
+}
+
+.contenedor__caja p {
+    font-size: 1.8rem;
+    color: #599876;
+}

@@ -8,6 +8,35 @@
     <title>Promedio, Media y Moda</title>
 </head>
 <body>
+    <header>
+        <h1>Promedio, Media y Moda</h1>
+        <p>Tercer taller del curso de JS</p>
+        <p>Nilton pv</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="contenedor__caja">
+            <img src="../img/empresa.png" alt="logo">
+            <h1> Media Aritmética</h1>
+
+            <form class="contenedor__input">
+                <label for="inputPromedio">Calc-Prom.</label>
+                <input id="inputPromedio" type="text" placeholder="ejm: 12, 20, 25...">
+                <button id="botPromedio" type="button" onclick="calPromedio()">CALC</button>
+
+                <label for="inputMedia">Calc-Media</label>
+                <input id="inputMedia" type="text" placeholder="ejm: 12, 20, 25...">
+                <button id="botMedia" type="button" onclick="calMedia()">CALC</button>
+
+                <label for="inputModa">Calc-Moda</label>
+                <input id="inputModa" type="text" placeholder="ejm: 12, 20, 25...">
+                <button id="botModa" type="button" onclick="calModa()">CALC</button>
+            </form>
+
+            <p id="texto"></p>
+        </section>
+    </main>
+
    <script src="../js/promedio.js"></script>
 </body>
 </html>
