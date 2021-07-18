@@ -56,25 +56,30 @@ function calMedia() {
 
 }
 
-// const lista1 = [120, 45, 50, 250, 300];
-// const ordenarLista = lista1.sort((a,b) => a - b);
+//Moda
 
-// const mitadLista = parseInt(ordenarLista.length / 2);
+function calModa() {
+    
+    const botModa = document.getElementById("botModa");
+    const texto = document.getElementById("texto");
 
+    const inputModa = document.getElementById("inputModa").value;
+    const separaArray = Array.from(inputModa.split(','),Number);
 
+    //convertir de array a objeto
+    const arrayObjeto = {};
+    separaArray.map(function(elemento) {
+        if(arrayObjeto[elemento]) {
+            arrayObjeto[elemento] += 1;
+        }else {
+            arrayObjeto[elemento] = 1;
+        }
+    });
 
-// //Es par
+    //convertir de objeto a array
+    const objetoArray = Object.entries(arrayObjeto).sort((a,b) => a-b);
+    const ultimaArray = Object.entries(arrayObjeto).sort((a,b) => a[1] - b[1]);
+    const moda = ultimoArray[ultimoArray.length - 1];
 
-// let mediana;
-
-// if(esPar(ordenarLista.length)) {
-//     const elemento1 = ordenarLista[mitadLista - 1];
-//     const elemento2 = ordenarLista[mitadLista];
-
-//     const calc = promedioAritmetica([elemento1, elemento2]);
-
-//     mediana = calc;
-
-// }else {
-//     mediana = ordenarLista[mitadLista];
-// }
+    texto.innerText = `La moda es: ${moda}`
+}
