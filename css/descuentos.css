@@ -5,18 +5,18 @@
 }
 
 html {
-    background-color: #1f2c38;
-    width: 100%;
-    height: auto;
     font-size: 62.5%;
     font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #1f2c38;
 }
 
 header {
     background-color: #0e131b;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 15px;
+    padding: 13px 0;
 }
 
 header h1 {
@@ -29,11 +29,19 @@ header p {
     color: #1f2c38;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70vh;
+}
+
 
 /* caja */
+
 .contenedor {
-    width: 350px;
-    min-width: 350px;
+    width: 300px;
+    min-width: 320px;
     height: auto;
     border: 2px solid #93ffa1;
     border-radius: 25px;
@@ -41,13 +49,12 @@ header p {
     margin: 15px auto;
 }
 
-.contenedor__caja i {
-    font-size: 80px;
-    color: #599876;
+.contenedor img {
+    width: 80px;
     margin: 20px 0 12px;
 }
 
-.contenedor__caja h2 {
+.contenedor h2 {
     font-size: 1.8rem;
     color: #599876;
     margin-bottom: 18px;

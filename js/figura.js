@@ -27,7 +27,7 @@ function diametroCirculo(radio) {
 }
 
 const PI = Math.PI;
-console.log('Pi es ' + PI);
+// console.log('Pi es ' + PI);
 
 function perimetroCirculo(radio) {
     const diametro = diametroCirculo(radio);
@@ -38,19 +38,20 @@ function areaCirculo(radio) {
     return (radio * radio) * PI;
 }
 
+//Altura de un triangulo isoceles
+
+function alturaIsosceles(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base) {
+        // const altura = Math.sqrt(lado1**2 - base**2 / 4).toFixed(2);
+        const altura = Math.sqrt((base / 2)**2 + lado1**2).toFixed(2);
+        return altura;
+    }else {
+        alert("Recuerda que un triángulo isósceles tienen lados iguales")
+    }
+}
 
 
-
-//Conectando Html y JavaScript
-
-// function calPerimetro() {
-//     const input = document.getElementById("inputCuadrado");
-//     const value = input.value;
-
-//     const perimetro = perimetroCuadrado(value)
-//     alert(perimetro);;
-// }
-
+//funciones
 function cuadradoAP() {
     const input = document.getElementById("inputCuadrado").value;
     const result = document.getElementById("resultCuadrado");
@@ -63,21 +64,24 @@ function cuadradoAP() {
 }
 
 function trianguloAP() {
-    const input1 = document.getElementById("inputIzquierdo").value;
-    const input2 = document.getElementById("inputCentro").value;
-    const input3 = document.getElementById("inputDerecho").value;
+    const inputIzquierdo = document.getElementById("inputIzquierdo").value;
+    const inputBase = document.getElementById("inputBase").value;
+    const inputAltura = document.getElementById("inputAltura").value;
+    const inputDerecho = document.getElementById("inputDerecho").value;
     const result = document.getElementById("resultTriangulo");
    
-    const lado1 = parseInt(input1); 
-    const base = parseInt(input2)
-    const lado2 = parseInt(input3)
+    const lado1 = parseInt(inputIzquierdo); 
+    const base = parseInt(inputBase);
+    const altura = parseInt(inputAltura);
+    const lado2 = parseInt(inputDerecho);
 
-    const area = areaTriangulo(base, lado2);
+    const area = areaTriangulo(base, altura);
     const perimetro = perimetroTriangulo(lado1, base, lado2);
-    // alert(`area ${area} perimetro ${perimetro}`);
+    
     result.innerText = `El Área es: ${area} cm
                         El Perimetro es: ${perimetro} cm`;
 }
+
 
 function circuloAP() {
     const input = document.getElementById("inputCirculo").value;
@@ -92,11 +96,18 @@ function circuloAP() {
                         El Diametro es: ${diametro} cm`;
 }
 
-function isocelesAP(lado1, lado2, base){
-    if(lado1==lado2 && lado1!=base){
-        const altura = Math.sqrt(lado1**2-base**2/4)
-        alert("Aún estamos trabajando, disculpe"+ altura)
-    }else{
-        alert("Aún estamos trabajando, disculpe")
-    }
-}s
+
+function isoscelesAP(){
+    const inputIz = document.getElementById("inputIz").value;
+    const inputBas = document.getElementById("inputBas").value;
+    const inputDer = document.getElementById("inputDer").value;
+    const result = document.getElementById("resultIsoceles");
+
+    const lado1 = parseInt(inputIz);
+    const lado2 = parseInt(inputDer);
+    const base = parseInt(inputBas);
+
+    const altura = alturaIsosceles(lado1, lado2, base);
+
+    result.innerText = `La altura es ${altura} cm`;
+}

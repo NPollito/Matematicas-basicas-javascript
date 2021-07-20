@@ -79,7 +79,7 @@ function calModa() {
     //convertir de objeto a array
     const objetoArray = Object.entries(arrayObjeto).sort((a,b) => a-b);
     const ultimaArray = Object.entries(arrayObjeto).sort((a,b) => a[1] - b[1]);
-    const moda = ultimoArray[ultimoArray.length - 1];
+    const moda = ultimaArray[ultimaArray.length - 1];
 
-    texto.innerText = `La moda es: ${moda}`
+    texto.innerText = `La moda es: ${moda[0]}`
 }

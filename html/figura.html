@@ -38,7 +38,8 @@
             </div>
             <form class="formulario">
                 <input class="izquierda" id="inputIzquierdo" type="number" placeholder="lado 1">
-                <input id="inputCentro" type="number" placeholder="base">
+                <input id="inputBase" class="altura" type="number" placeholder="base">
+                <input id="inputAltura" type="number" placeholder="altura">
                 <input class="derecha" id="inputDerecho" type="number" placeholder="lado 2">
             </form>
             <button class="buttonCalc" type="button" onclick="trianguloAP()">Calcular</button>
@@ -59,16 +60,16 @@
         </div>
 
         <div class="caja">
-            <h2 class="titulo">Área y perimetro Triángulo Isósceles</h2>
+            <h2 class="titulo">Áltura Triángulo Isósceles</h2>
             <div class="caja-figura">
                 <div class="triangulo  triangulo2"></div>
             </div>
             <form class="formulario">
-                <input class="izquierda" id="inputCuadrado" type="number" placeholder="lado 1">
-                <input id="inputCuadrado" type="number" placeholder="base">
-                <input class="derecha" id="inputCuadrado" type="number" placeholder="lado 2">
+                <input class="izquierda" id="inputIz" type="number" placeholder="lado 1">
+                <input id="inputBas" type="number" placeholder="base">
+                <input class="derecha" id="inputDer" type="number" placeholder="lado 2">
             </form>
-            <button class="buttonCalc" type="button" onclick="isocelesAP()">Calcular</button>
+            <button class="buttonCalc" type="button" onclick="isoscelesAP()">Calcular</button>
             <p id="resultIsoceles"></p>
         </div>
     </section>
