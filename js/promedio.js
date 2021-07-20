@@ -81,5 +81,5 @@ function calModa() {
     const ultimaArray = Object.entries(arrayObjeto).sort((a,b) => a[1] - b[1]);
     const moda = ultimaArray[ultimaArray.length - 1];
 
-    texto.innerText = `La moda es: ${moda[0]}`
+    texto.innerText = `La moda es: ${moda[0]} se repite ${moda[1]} veces`
 }

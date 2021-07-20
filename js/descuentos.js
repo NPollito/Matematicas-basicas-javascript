@@ -24,8 +24,10 @@ function generarDescuento() {
     const generar = precioDescuento(inputPrecio, inputDescuento);
     const generaCupon = generarCupon();
     const cuponGenerado = precioDescuento(generar, generaCupon);
-    pTexto.innerText = `El descuento es:  S/ ${generar} ${cuponGenerado}`
-}
 
+    pTexto.innerText = `Su descuento del ${inputDescuento}% es: ${generar} sol. 
+                        y con cupon es ${cuponGenerado} sol`;
+}
+ 
 
 
