@@ -10,22 +10,27 @@
 </head>
 <body>
     <header>
-        <h1>Curso JavaScript Platzi</h1>
-        <p>Nilton pv</p>
+        <h1>Matemáticas con JavaScript</h1>
+        <p>Básicas</p>
     </header>
 
     <main>
-        <section class="caja__figuras">
-            <a href="./html/figura.html"><h2>Figuras Geómetricas</h2></a>
+        <section class="geometric-figures">
+            <a href="#">Calcular Figuras Geómetricas</a>
         </section>
 
-        <section class="caja__descuentos">
-            <a href="./html/descuentos.html"><h2>Porcentajes y Descuentos</h2></a>
+        <section class="porcentages-and-discounts">
+            <a href="#">Calcular Porcentajes y Descuentos</a>
         </section>
 
-        <section class="caja__promedio">
-            <a href="./html/promedio.html"><h2>Promedio, Media y Moda</h2></a>
+        <section class="average-and-median">
+            <a href="#">Calcular Promedio, Media y Moda</a>
         </section>
     </main>
+
+    <script>
+        const select = document.querySelector('a');
+        select.addEventListener('click', () => alert('Página en mantenimiento vuelva pronto'));
+    </script>
 </body>
 </html>

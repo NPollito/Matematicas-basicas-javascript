@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 html {
@@ -33,28 +33,31 @@ main {
     text-align: center;
 }
 
-section {
-    cursor: pointer;
+section a {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 0;
     width: 350px;
-    min-width: 350px;
-    height: 70px;
-    border: 2px double #93ffa1;
-    border-width: 6px;
-    border-radius: 60px 0px;
-    margin: 40px auto;
-    
-}
-
-section:hover {
+    font-size: 2rem;
+    color: #599876;
+    text-decoration: none;
+    /*border: 1px solid #93ffa1;*/
+    border-radius: 34px;
     background-color: #0e131b;
 }
-
-section a {
-    text-decoration: none;
-    color: #599876;
+section a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #93ffa1;
+    transition: all .3s;
 }
-
-section h2 {
-    padding: 18px 0;
-    font-size: 1.8rem;
+section a:hover::before {
+    width: 100%;
+    left: 0;
 }
