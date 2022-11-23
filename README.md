@@ -1,6 +1,6 @@
 # Curso-javascript-basico
 
-visite la página [**NiltonPv**](https://npollito.github.io/Curso-javascript-basico/)
+visite la página [**clic aquí**]( https://npollito.github.io/Matematicas-basicas-javascript/)
 
 ## Taller #1: Figuras geométricas
 
