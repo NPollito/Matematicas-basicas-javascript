@@ -33,61 +33,84 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 70vh;
+    justify-content: space-evenly;
+    min-height: 80vh;
 }
 
 
-/* cards */
-
-.caja {
+/* cards title */
+.card {
     position: relative;
     width: 300px;
-    min-width: 320px;
-    height: 380px;
+    height: auto;
     border: 2px solid #93ffa1;
     border-radius: 25px;
     text-align: center;
-    margin: 15px auto;
+    margin: 20px 0;
 }
 
-.caja h2 {
+.card__title {
     font-size: 2rem;
+    font-weight: 600;
     color: #599876;
     padding: 25px 0;
 }
 
-.caja .caja-figura {
-    width: 100%;
-    height: 120px;
-    /* background-color: red; */
-    margin-bottom: 8px;
-}
-
-.caja .cuadrado {
+.card__square {
     width: 120px;
     height: 120px;
+    margin: 0 auto 12px;
     background-color: #599876;
-    margin: 0 auto;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, .5);
 }
 
-.caja .triangulo {
+
+/* cards figure */
+.card__triangle {
     width: 0;
     height: 0;
+    margin: 0 auto 12px; 
     border-right: 80px solid transparent;
     border-top: 0px solid transparent;
     border-left: 80px solid transparent;
-    border-bottom: 120px solid #599876; 
-    margin: 0 auto; 
+    border-bottom: 120px solid #599876;
+    box-shadow: 0 5px rgba(0, 0, 0, .5);
 }
 
-.caja .triangulo2:nth-child(1) {
-    border-right: 60px solid transparent;
-    border-left: 60px solid transparent;
+.card__circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background-color: #599876;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, .5);
 }
 
-/* caja imput */
+.card__triangle-isosceles {
+    width: 0;
+    height: 0;
+    margin: 0 auto 12px;
+    border-top: 0px solid transparent;
+    border-left: 90px solid transparent;
+    border-bottom: 120px solid #599876;
+    box-shadow: 0 5px rgba(0, 0, 0, .5);
+}
 
-.caja input {
+.card__triangle-escaleno {
+    width: 0;
+    height: 0;
+    margin: 0 auto 12px;
+    border-right: 80px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 115px solid transparent;
+    border-bottom: 120px solid #599876;
+    transform: rotate(-16deg);
+    box-shadow: 0 5px rgb(0 0 0 / 50%);
+}
+
+
+/* card form */
+.card__input {
     cursor: text;
     outline: none;
     width: 45px;
@@ -98,66 +121,70 @@ section {
     color: #599876;
     text-align: center;
 }
+
+.input__left {
+    position: absolute;
+    top: 110px;
+    left: 42px;
+}
+
+.input__right {
+    position: absolute;
+    top: 110px;
+    right: 42px;
+}
+
+.input__left-isoceles {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+}
+
+.input__left-escaleno {
+    position: absolute;
+    top: 126px;
+    left: 43px;
+}
+
+.input__right-escaleno {
+    position: absolute;
+    top: 85px;
+    right: 36px;
+}
+
+.input__base-escaleno {
+    margin-left: 80px;
+}
+
+
 /* ocultar type number */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
-.caja .izquierda {
-    position: absolute;
-    top: 110px;
-    left: 40px;
-}
 
-.caja .derecha {
-    position: absolute;
-    top: 110px;
-    left: 210px;
-}
-
-.caja .altura {
-    margin-right: 12px;
-}
-
-.caja .circulo {
+/* card button */
+.card__button {
     width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #599876;
-    margin: 0 auto ;
-}
-
-.caja .center {
-    position: relative;
-    bottom: 80px;
-    background-color: #1f2c38;
-}
-
-/* caja botton */
-
-
-.caja .buttonCalc {
+    height: 30px;
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
-    padding: 5px;
     font-weight: 600;
     color: #93ffa1;
     background-color: transparent;
     border-radius: 6px;
     border: 2px solid #599876;
-    width: 120px;
-    height: 30px;
 }
 
-.caja .buttonCalc:hover {
+.card__button:hover {
     background-color: #050a11;
 }
 
-.caja p {
+.card__paragraph {
     font-size: 1.8rem;
-    margin: 15px 8px 0 6px;
+    margin: 15px 4px;
     color: #599876;
 }

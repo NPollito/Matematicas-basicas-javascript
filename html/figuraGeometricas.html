@@ -18,61 +18,65 @@
     </header>
 
     <section>
-        <div class="caja">
-            <h2 class="titulo">Área y perimetro Cuadrado</h2>
-            <div class="caja-figura">
-                <div class="cuadrado"></div>
+        <div class="card">
+            <h2 class="card__title">Área y perimetro Cuadrado</h2>
+            <div class="card__square">
+                <!--<div class="card__square"></div>-->
             </div>
-            <form class="formulario">
-                <!-- <label for="inputCuadrado"></label> -->
-                <input id="inputCuadrado" type="number" placeholder="lado">
+            <form class="card__forms">
+                <input id="inputSquare" class="card__input" type="number" placeholder="lado">
             </form>
-            <button class="buttonCalc" type="button" onclick="cuadradoAP()">Calcular</button>
-            <p id="resultCuadrado"></p>
+            <button id="buttonCalculateSquare" class="card__button" type="button">Calcular</button>
+            <p id="resultSquare" class="card__paragraph"></p>
         </div>
 
-        <div class="caja">
-            <h2 class="titulo">Área y perimetro Triángulo</h2>
-            <div class="caja-figura">
-                <div class="triangulo"></div>
-            </div>
-            <form class="formulario">
-                <input class="izquierda" id="inputIzquierdo" type="number" placeholder="lado 1">
-                <input id="inputBase" class="altura" type="number" placeholder="base">
-                <input id="inputAltura" type="number" placeholder="altura">
-                <input class="derecha" id="inputDerecho" type="number" placeholder="lado 2">
+        <div class="card">
+            <h2 class="card__title">Área y perimetro Triángulo</h2>
+            <div class="card__triangle"></div>
+            <form class="card__forms">
+                <input id="inputTriangleLeft" class="card__input input__left" type="number" placeholder="lado 1">
+                <input id="inputTriangleRight" class="card__input input__right" type="number" placeholder="lado 2">
+                <input id="inputTriangleBase" class="card__input" type="number" placeholder="base">
+                <input id="inputTriangleAltura" class="card__input" type="number" placeholder="altura">
             </form>
-            <button class="buttonCalc" type="button" onclick="trianguloAP()">Calcular</button>
-            <p id="resultTriangulo"></p>
+            <button id="buttonCalculateTriangle" class="card__button" type="button">Calcular</button>
+            <p id="resultTriangle" class="card__paragraph"></p>
         </div>
 
-        <div class="caja">
-            <h2 class="titulo">Área y perimetro Círculo</h2>
-            <div class="caja-figura">
-                <div class="circulo"></div>
-            </div>
-            <form class="formulario">
-                <!-- <label for="inputCuadrado">Escribe cuánto mide cada lado del cuadrado:</label> -->
-                <input class="center" id="inputCirculo" type="number" placeholder="radio">
+        <div class="card">
+            <h2 class="card__title">Área y perimetro circulo</h2>
+            <div class="card__circle"></div>
+            <form class="card__forms">
+                <input class="card__input" id="inputCircle" type="number" placeholder="radio">
             </form>
-            <button class="buttonCalc" type="button" onclick="circuloAP()">Calcular</button>
-            <p id="resultCirculo"></p>
+            <button id="buttonCalculateCircle" class="card__button" type="button">Calcular</button>
+            <p id="resultCircle" class="card__paragraph"></p>
         </div>
 
-        <div class="caja">
-            <h2 class="titulo">Áltura Triángulo Isósceles</h2>
-            <div class="caja-figura">
-                <div class="triangulo  triangulo2"></div>
-            </div>
-            <form class="formulario">
-                <input class="izquierda" id="inputIz" type="number" placeholder="lado 1">
-                <input id="inputBas" type="number" placeholder="base">
-                <input class="derecha" id="inputDer" type="number" placeholder="lado 2">
+        <div class="card">
+            <h2 class="card__title">Altura Triángulo Isósceles</h2>
+            <div class="card__triangle-isosceles"></div>
+            <form class="card__forms">
+                <input id="inputIsoscelesLeft" class="card__input input__left-isoceles" type="number" placeholder="lados">
+                <input id="inputIsoscelesBase" class="card__input" type="number" placeholder="base">
             </form>
-            <button class="buttonCalc" type="button" onclick="isoscelesAP()">Calcular</button>
-            <p id="resultIsoceles"></p>
+            <button id="buttonCalculateIsosceles" class="card__button" type="button">Calcular</button>
+            <p id="resultIsosceles" class="card__paragraph"></p>
         </div>
+
+        <div class="card">
+            <h2 class="card__title">Altura Triángulo Escaleno</h2>
+            <div class="card__triangle-escaleno"></div>
+            <form class="card__forms">
+                <input id="inputEscalenoLeft" class="card__input input__left-escaleno" type="number" placeholder="a">
+                <input id="inputEscalenoRight" class="card__input input__right-escaleno" type="number" placeholder="b">
+                <input id="inputEscalenoBase" class="card__input input__base-escaleno" type="number" placeholder="c">
+            </form>
+            <button id="buttonCalculateEscaleno" class="card__button" type="button">Calcular</button>
+            <p id="resultEscaleno" class="card__paragraph"></p>
+        </div>
+        
     </section>
-    <script src="../js/figura.js"></script>
+    <script src="../js/figuraGeometrica.js"></script>
 </body>
 </html>
