@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/descuentos.css">
+    <link rel="stylesheet" href="../css/calculoDescuento.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
     <title>Porcentajes y Descuentos</title>
@@ -17,34 +17,29 @@
     </header>
 
     <main >
-        <section class="contenedor">
-            <img src="../img/oferta.png" alt="oferta">
-            <h2 class="contenedor__titulo">Tienda de Descuentos y Cupones</h2>
+        <section class="container">
+            <img class="container__image" src="../img/oferta.png" alt="image_offer">
+            <h2 class="container__title">Calcular Porcentaje</h2>
 
-            <form class="contenedor__inputs">
-                <label for="inputPrecio">¿Cuál es el Precio a Pagar?</label>
-                <input id="inputPrecio" type="number" placeholder="soles">
+            <form class="container__inputs">
+                <label for="inputPrice">Precio a Pagar</label>
+                <input id="inputPrice" class="container__input" type="number" placeholder="Soles">
 
-                <label for="inputDescuento">Porcentaje de Descuento?</label>
-                <input id="inputDescuento" type="number" placeholder="porcentaje">
+                <label for="inputDiscount">Porcentaje</label>
+                <input id="inputDiscount" class="container__input type="number" placeholder="%">
 
-                <div class="cupon">
-                    <label for="inputCupon">Cupones</label>
-                    <select id="inputCupon">
-                        <option disabled>cupon de descuento</option>
-                        <option value="0">ninguno</option>
-                        <option value="15">-15%</option>
-                        <option value="25">-25%</option>
-                        <option value="35">-35%</option>
-                    </select>
+                <div class="coupon">
+                    <label for="inputCoupon">Cupones</label>
+                    <input id="inputCoupon" class="couponInput" type="text" placeholder="Dijite tu cupon" disabled>
+                    <input type="checkbox" value="no" id="inputCheck">
                 </div>
 
-                <button id="btnCalcular" type="button" onclick="generarDescuento()">Generar</button>
+                <button class="btnCalculate" type="button">Generar</button>
 
-                <p id="texto"></p>
+                <p id="paragraph"></p>
             </form>
         </section>
     </main>
-    <script src="../js/descuentos.js"></script>
+    <script src="../js/calculoDescuento.js"></script>
 </body>
 </html>

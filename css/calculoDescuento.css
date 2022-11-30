@@ -37,9 +37,9 @@ main {
 }
 
 
-/* caja */
+/* contenedor de descuento*/
 
-.contenedor {
+.container {
     width: 300px;
     min-width: 320px;
     height: auto;
@@ -49,41 +49,44 @@ main {
     margin: 15px auto;
 }
 
-.contenedor img {
+.container__image {
     width: 80px;
-    margin: 20px 0 12px;
+    margin: 20px 0;
 }
 
-.contenedor h2 {
+.container__title {
     font-size: 1.8rem;
     color: #599876;
     margin-bottom: 18px;
 }
 
-.contenedor__inputs {
+.container__inputs {
     display: flex;
     flex-direction: column;
 }
 
-.contenedor__inputs label {
+.container__inputs label {
     font-size: 1.5rem;
     color: #599876;
     padding-bottom: 5px;
 }
 
-.contenedor__inputs input {
+.container__input {
+    margin: 0 auto 10px;
+    height: 30px;
+    width: 270px;
+    text-align: center;
+    font-size: 15px;
     cursor: text;
     outline: none;
-    width: 270px;
-    height: 30px;
     border-radius: 6px;
-    background-color: transparent;
+    /*background-color: transparent;*/
     border: 2px solid #599876;
-    color: #599876;
-    text-align: center;
-    margin: 0 auto 10px;
 }
 
+.container__inputs {
+
+}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none;
@@ -92,9 +95,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* boton */
-.contenedor__inputs button {
+.container__inputs button {
     cursor: pointer;
-    margin: 14px auto;
+    margin: 22px auto 10px;
     text-decoration: none;
     padding: 5px;
     font-weight: 600;
@@ -106,11 +109,12 @@ input[type=number]::-webkit-outer-spin-button {
     height: 35px;
 }
 
-.contenedor__inputs button:hover {
+
+.container__inputs button:hover {
     background-color: #050a11;
 }
 
-.contenedor__inputs p {
+.container__inputs p {
     font-size: 1.8rem;
     margin: 10px auto;
     color: #599876;
@@ -119,18 +123,19 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* input cupon */
 
-.contenedor__inputs .cupon {
-    padding-top: 7px;
+.coupon {
+    display: flex;
+    margin: 5px auto 0;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
 }
 
-.contenedor__inputs select {
-    cursor: pointer;
-    margin-left: 5px;
-    width: 200px;
-    height: 25px;
-    background-color: #1f2c38;
+.coupon .couponInput {
+    width: 110px;
     outline: none;
     border: 2px solid #599876;
-    color: #599876;
+    text-align: center;
     border-radius: 6px;
+    font-size: 14px;
 }
