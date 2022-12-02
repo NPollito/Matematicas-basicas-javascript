@@ -11,7 +11,7 @@ inputCheck.addEventListener('change', activeInput);
 
 const couponList = [];
 couponList.push({
-    name: "regalito",
+    name: "javascript",
     discount: 5
 });
 couponList.push({
@@ -58,7 +58,7 @@ function generatePorcentage() {
 
 function generateCoupon() {
     const price = Number(inputPrice.value);
-    const coupon = document.querySelector('#inputCoupon').value; 
+    const coupon = document.querySelector('#inputCoupon').value.toLowerCase(); 
     const paragraph = document.querySelector('#paragraph');
     
     if(!price || !coupon) {
@@ -78,8 +78,8 @@ function generateCoupon() {
         discounts = couponInArray[0].discount
     }else {
         paragraph.innerText = `El cupon no es valido,
-        hoy estas de suerte prueva con
-        (regalito)`
+        Hoy estas de suerte prueba con
+        (javascript)`
         return;
     }
 

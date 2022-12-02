@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/promedio.css">
+    <link rel="stylesheet" href="../css/calculoPromedio.css">
     <title>Promedio, Media y Moda</title>
 </head>
 <body>
@@ -15,34 +15,35 @@
     </header>
 
     <main>
-        <section class="contenedor">
-            <img src="../img/empresa.png" alt="logo">
-            <h2> Media Aritmética</h2>
+        <section class="container">
+            <img class="container__image" src="../img/empresa.png" alt="logo">
+            <h2 class="container__title"> Calculadora de Promedio, Media y Moda</h2>
 
-            <form class="contenedor__input">
-                <div>
-                    <label for="inputPromedio">Calc-Prom.</label>
-                    <input id="inputPromedio" type="text" placeholder="ejm: 12, 20, 25...">
-                    <button id="botPromedio" type="button" onclick="calPromedio()">CALC</button>
+            <form class="container__form">
+                
+                <div class="container__data">
+                    <label for="inputArea">Escribe los números</label>
+                    <textarea id="inputArea" cols="35" rows="4" placeholder="separar por comas 5, 10, 12..."></textarea>
+                    <input id="btnCalculate" type="button" value="Calcular">
                 </div>
 
-                <div>
-                    <label for="inputMedia">Calc-Media</label>
-                    <input id="inputMedia" type="text" placeholder="ejm: 25, 20, 15...">
-                    <button id="botMedia" type="button" onclick="calMedia()">CALC</button>
-                </div>
-
-                <div>
-                    <label for="inputModa">Calc-Moda</label>
-                    <input id="inputModa" type="text" placeholder="ejm: 5, 7, 5...">
-                    <button id="botModa" type="button" onclick="calModa()">CALC</button>
+                <div class="container__calculated">
+                    <p for="inputAverage">Promedio:</p>
+                    <div id="inputAverage"></div>
+            
+                    <p for="inputHalf">Media:</p>
+                    <div id="inputHalf"></div>
+                
+                    <p for="inputFashion">Moda:</p>
+                    <div id="inputFashion"></div>
                 </div>
             </form>
 
-            <p id="texto"></p>
+            <p id="container__paragraph"></p>
         </section>
     </main>
 
-   <script src="../js/promedio.js"></script>
+   <script src="../js/calculoPromedio.js"></script>
+   <script src="../js/metodos.js"></script>
 </body>
 </html>
